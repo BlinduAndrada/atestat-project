@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+<title> Prima pagina</title>
+</head>
+
+<div class="header">
+  <img src="info1.jpg" alt="Italian Trulli" style="max-width: 100%">
+</div>
+<div id='cssmenu'>
+<ul>
+   <li><a href='index.html'>Main page</a></li>
+    <li class='active'><a href='#'>Grade</a>
+   <li class='active'><a href='#'>Reprezentare matrice de adiecenta</a>
+   
+   
+  
+</ul>
+</div>
+
+
+<head>
+<style>
+body  {
+  background-image: url("back.jpg");
+  background-color: #cccccc;
+   background-size: cover;
+}
+</style>
+</head>
+<h2><center> Graf orientat </h2>
+
+<pre style="font-size:15px; font-weight: large">     Definiție. Se numeşte graf orientat sau digraf o pereche ordonată de mulțimi notată G=(V, U), unde:
+
+ • V este o mulțime finită şi nevidă ale cărei elemente se numesc noduri sau vârfuri;
+ • U este o mulțime de perechi ordonate de elemente distincte din V ale cărei elemente se numesc arce.
+</pre>
+<br>
+<style>
+table, th, td {
+  border:0px solid black;
+}
+</style>
+<body>
+
+<table style="width:100%">
+  <tr>
+   <td style="max-width: fit-content;"> <img src="graf2.png"  width="200"; height="250"; align=center> </td>
+    <td><h3> Notiuni:</h3>
+<pre style="font-size:15px; font-weight: large"> 
+  • Extremități ale unui arc: pentru arcul u=(x,y), se numesc extremități ale sale nodurile x si y;
+    x se numește extremitate inițială;
+    y se numește extremitate finală;
+    y se numește succesor al lui x;
+    x se numește predecesor al lui y;
+  • vârfuri adiacente: daca într-un graf există arcul u=(x,y) se poate spune despre nodurile x și y că sunt adiacente;
+  • incidență: 
+    dacă u1 si u2 sunt doua arce ale aceluiași graf, se numesc incidente daca au o extremitate comună.
+    Dacă u1=(x,y) este un arc într-un graf, se spune despre el si nodul x, sau nodul y, că sunt incidente;
+
+</pre>
+</td>
+  </tr>
+</table>
+<pre style=" background: rgba( 0, 176, 153, 0.5) "><h2> Grade</h2></pre>
+<pre style="font-size:15px; font-weight: large">
+  Definiție. Fie G=(V, U) un graf orientat și x un nod al său.
+  • Se numeşte grad exterior al nodului x, numărul arcelor de forma (x,y) (adică numărul arcelor care ies din x), notat d+(x).
+  • Se numeşte grad interior al nodului x, numărul arcelor de forma (y,x) (adică numărul arcelor care intră în x), notat d-(x).
+</pre>
+<style>
+table, th, td {
+  border:0px solid black;
+}
+</style>
+<body>
+
+<table style="width:70%">
+  <tr>
+   <td style="max-width: fit-content;"> <img src="graf3.png"  width="200"; height="200"; align=center> </td>
+    <td>Pentru graful alăturat:
+• d+(2)=2
+• d-(2)=3
+</td>
+  </tr>
+</table>
+
+</body>
+<pre style=" background: rgba( 0, 176, 153, 0.5) "><h1> Reprezentarea grafurilor orientate</h1></pre>
+<pre style="font-size:15px; font-weight: large">      
+  
+<h3>Matricea de adiacență</h3>
+   Fie G=(V,U) un graf orientat cu n noduri, în care nu există mai multe arce de la un nod la altul.
+   Matricea de adiacență a grafului este o matrice cu n linii și n coloane și elemente 0 sau 1, astfel:
+
+  Ai,j=1 dacă există arcul (i,j)
+  Ai,j=0 dacă există nu arcul (i,j)
+</pre>
+<style>
+table, th, td {
+  border:0px solid black;
+}
+</style>
+<body>
+
+<table style="width:70%">
+  <tr>
+   <td style="max-width: fit-content;"> <img src="poza1.png"  width="200"; height="250"; align=center> </td>
+    <td> <pre>        Pentru graful alăturat, matricea de adiacență este:
+
+0 0 0 0 0 1
+1 0 0 1 0 0
+0 1 0 0 0 0
+0 1 0 0 0 0
+0 0 0 1 0 0
+1 1 0 1 0 0
+
+Observăm că matricea de adiacență:
+
+are zerouri pe diagonală (dacă în graf nu avem bucle)
+nu trebuie să fie simetrică față de diagonala principală</pre>
+</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+

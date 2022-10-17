@@ -1,0 +1,158 @@
+ 
+body{
+	width: 1000px;
+  height: auto;
+	margin: auto;
+	background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+	background-size: 2000px;
+}
+a{
+  color: #551a8b;
+}
+html{
+  cursor: url("cursor/cursor1.cur"),auto;
+}
+.header{
+
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+}
+
+.header div a{
+ 
+	width: 1200px;
+	text-decoration: none;
+}
+.centru{
+	position: absolute;
+	z-index: -1;
+	top: 100px;
+	width: 1000px;
+	height: 100%;
+  background-image:url("img/graf.png"); 
+	background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+ .c1{
+  position: relative;
+  top: 213px;
+  left: 288px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer; 
+  border-radius: 50%;
+ }
+
+.c2{
+  position: relative;
+  top: 251px;
+  left: 664px;
+  width: 47px;
+  height: 47px;
+  cursor: pointer; 
+  border-radius: 50%;
+ }
+.c3{
+  position: relative;
+  top: 25px;
+  left: 479px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer; 
+  border-radius: 50%;
+}
+.c4{
+  position: relative;
+  top:282px;
+  left: 490px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer; 
+  border-radius: 50%;
+
+}
+
+.bottom{
+	position: absolute;
+	bottom:-1000px;
+
+	left:33%;
+	text-align: center;
+	width:400px;
+	border-top: 1px solid black;
+}
+
+#mm,.c1,.c2,.c3,.c4:hover{
+  cursor: url("cursor/cursor2.cur"),auto;
+  text-align: center;
+}
+
+#menu {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.m{
+   
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px ;
+  text-align: center;
+
+}
+ 
+.m1{
+  margin: 0px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px; 
+  margin-left: 0px;
+ 
+ 
+}
+#unu{
+  font-size : 38px;
+  text-align: center;
+}
+.m2{
+  
+ padding: 5px;
+ border-radius: 10px;
+ 
+}
+.bred :hover{
+     background-color: bisque;
+     cursor: url("cursor/cursor2.cur"),auto;
+ 
+ } 
+ .dropdown{
+    list-style: none;
+    padding: 0px;
+
+  }
+   .drop{
+    margin-top: 20px;
+    margin-right: -10px; 
+   }
+   .style1
+   {
+    display: none;
+   }
+   /* For portrait, we want the tool bar on top */
+
+@media screen and (orientation: portrait) {
+  body{
+    display: none;
+  }
+  html {
+     background-image: url("/img/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 320px;
+    background-color: #212121;
+    }
+}

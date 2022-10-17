@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+<title> Prima pagina</title>
+</head>
+
+<div class="header">
+  <img src="info1.jpg" alt="Italian Trulli" style="max-width: 100%">
+</div>
+<div id='cssmenu'>
+<ul>
+   <li><a href='index.html'>Main page</a></li>
+   <li class='active'><a href='#'>Tipologia Grafurilor</a>
+      <ul>
+         <li><a href='#'>Graf partial.Subraf.Graf complementar</a>
+            
+         </li>
+         <li><a href='#'>Graf nul.Graf complet.Graf regulat.Graf bipartit</a>
+            
+         </li>
+      </ul>
+   </li>
+   
+   <li><a href='#'>Graf hamiltonian. Graf eulerian</a></li>
+
+</ul>
+</div>
+
+
+<head>
+<style>
+body  {
+  background-image: url("back.jpg");
+  background-color: #cccccc;
+   background-size: cover;
+}
+</style>
+</head>
+
+
+<h2><center> Graf neorientat </h2>
+
+<pre style="font-size:15px; font-weight: large">     Definiție: Se numește graf neorientat o pereche ordonată de mulțimi G=(X,U), unde:
+    • X este o mulțime finită și nevidă de elemente numite vârfuri sau noduri;
+    • U este o mulțime finită de submulțimi cu două elemente din X, numite muchii.
+
+	  Conform definiției:
+	•  într-un graf neorientat nu există muchie de la un vârf la el însuși;
+	•  intre două vârfuri distincte există cel mult o muchie.</pre>
+    <pre style=" background: rgba( 0, 176, 153, 0.5) "><h2>         Graf parțial.Subgraf. Graf completar</h2></pre>
+
+<pre style="font-size:15px; font-weight: large; max-width: 100%; display: block; word-wrap: break-word;">   
+   Definiție: Fie G=(X, U) un graf neorientat. Se numeşte graf partial al grafului G, graful neorientat G1=(X, U1), unde U1 ⊆ U.
+
+   Definiție. Fie G=(X, U) un graf orientat. Se numeşte subgraf al grafului G graful neorientat G1=(X1,U1) unde X1 ⊆ X iar U1 conține toate arcele din U 
+   care au extremitățile în X1.
+
+   Definiție. Fie G=(X, U) un graf neorientat. Se numeşte graf complementar al grafului G, graful neorientat G1=(X, U1), cu proprietatea că două vârfuri x și y
+   sunt adiacente în G1 dacă și numai dacă nu sunt adiacente în G.
+</pre>
+
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+
+<table cellspacing="0" cellpadding="0">
+  
+    <th>Graf initial</th>
+ <th>Graf partial</th>
+<th>Subgraf</th>
+ <th>Graf complementar</th>
+
+<tr>
+    <td style="max-width: fit-content;"> <img src="g2.jpg"  width="300"; height="150"; align=center>
+</td>
+    
+  
+  
+   
+    <td style="max-width: fit-content;"> <img src="g3.jpg"  width="200"; height="150"; align=center> </td>
+  
+ 
+    
+    <td style="max-width: fit-content;"> <img src="g4.jpg"  width="200"; height="150"; align=center></td>
+
+    
+    <td style="max-width: fit-content;"> <img src="g5.jpg"  width="200"; height="150"; align=center></td>
+   </tr>
+
+  </table>
+<br>
+<br>
+<pre style=" background: rgba( 0, 176, 153, 0.5) "><h2>         Graf nul. Graf complet. Graf regulat. Graf bipartit</h2></pre>
+<pre style="font-size:15px; font-weight: large">      
+      Definiție: Un graf neorientat se numește graf nul dacă mulțimea muchiilor este vidă.  
+      Într-un graf nul toate vârfurile sunt izolate.
+
+      Definiție. Fie G=(X, U) un graf neorientat. Graful G se numește graf complet dacă oricare două vârfuri distincte ale sale sunt adiacente.
+
+      Definiţie: Un graf G=(X, U) se numește graf bipartit dacă există două mulţimi nevide A și B astfel încât X=A ∪ B, A ∩ B = ∅ şi orice muchie u a lui G are 
+      o extremitate în A iar cealaltă în B. Mulţimile A şi B formează o partiţie a lui X.
+</pre>
+<br>
+<table cellspacing="0" cellpadding="0">
+  
+    <th>Graf complet</th>
+ <th>Graf regulat</th>
+<th>Graf bipartit</th>
+
+<tr>
+    <td style="max-width: fit-content;"> <img src="g6.jpg"  width="250"; height="150"; align=center>
+</td>
+    
+  
+  
+   
+    <td style="max-width: fit-content;"> <img src="g7.jpg"  width="250"; height="150"; align=center> </td>
+  
+ 
+    
+    <td style="max-width: fit-content;"> <img src="g8.jpg"  width="250"; height="150"; align=center></td>
+
+    
+   
+   </tr>
+
+  </table>
+<br>
+<pre style=" background: rgba( 0, 176, 153, 0.5) "><h2>          Graf conex. Componente conexe</h2></pre>
+
+<pre style="font-size:15px; font-weight: large">       Definiție: Un graf neorientat se numește graf conex dacă pentru oricare două vârfuri x și y diferite ale sale, există cel puțin un lanț care 
+  le leagă, adică x este extremitatea inițială și y este extremitatea finală.
+   Un graf cu un singur nod este, prin definiție, conex.
+
+      Definiție  Se numește componentă conexă a unui graf G=(X,U) un subgraf H=(Y, V), conex, al lui G care are proprietatea că nu există nici un lanț în G care
+       să lege un vârf din Y cu un vârf din X-Y.
+Subgraful H este conex și maximal cu această proprietate.
+</pre>
+<br>
+<table cellspacing="0" cellpadding="0">
+  
+    <th>Graf conex</th>
+
+
+<tr>
+    <td style="max-width: fit-content;"> <img src="g2.jpg"  width="250"; height="150"; align=center>
+</td>
+
+   </tr>
+
+  </table>
+  <br>
+  <br>
+ 
+  <pre style=" background: rgba( 0, 176, 153, 0.5) "><h1>                             Graf Hamiltonian. Graf Eulerian </h1></pre>
+  <br>
+  <pre style="font-size:15px; font-weight: large; background: rgba( 200, 200, 200, 0.5);">   Definiție: Se numește graf hamiltonian un graf care conține un ciclu hamiltonian. Se numește ciclu hamiltonian un ciclu elementar care conține toate 
+ vârfurile grafului.
+
+
+   Exemplu: Graful următor este hamiltonian. Un ciclu hamiltonian este: [1,4,2,3,7,6,5,1]
+
+   Definiție: Se numește graf eulerian un graf care conține un ciclu eulerian. Se numește ciclu eulerian un ciclu care conține toate muchiile grafului.
+
+Exemplu: Graful următor este eulerian. Un ciclu eulerian este: [1,4,2,1,3,2,7,3,5,7,6,5,1]
+</pre>
+<br>
+<table cellspacing="0" cellpadding="0">
+  
+    <th>Graf Hamiltonian</th>
+ <th>Graf Eulerian</th>
+
+
+<tr>
+    <td style="max-width: fit-content;"> <img src="g9.jpg"  width="250"; height="150"; align=center>
+</td> 
+   
+    <td style="max-width: fit-content;"> <img src="g10.jpg"  width="250"; height="150"; align=center> </td>
+   
+   
+   </tr>
+
+  </table>
+
+</body>
+</html>
+
+
